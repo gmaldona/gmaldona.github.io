@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -133,6 +137,11 @@ body {
         padding: 5px;
       }
 
+      .project-group {
+        display: block;
+        justify-content: center;
+    }
+
       .project-ls {
         display: flex;
         justify-content: center;
@@ -194,5 +203,64 @@ body {
         text-align: left;
         margin: 50px;
     }
+
+    .project {
+        padding: 30px;
+        width: 450px;
+        height: 400px;
+        background-image: linear-gradient(#133B78, #6187c8);
+        border-radius: 1cm;
+      }
+
+      .project-group {
+            display: flex;
+            justify-content: center;
+      }
+      
+      .project-ls {
+        display: inline-flex;
+        padding: 50px;
+      }
+      
+      .project-title {
+        font-size: 20px;
+        font-weight: bold;
+        color: #CCCCFF;
+      }
+
+      .project-block {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .project-image {
+        display:flex;
+        border-radius: 20px;
+        border: 2px solid darkslateblue;
+        width: 40%;
+      }
+      
+      .project-des {
+        padding-left: 30px;
+        padding-right: 30px; 
+        font-size: 15px;
+      }
+      
+      .project-tech {
+        padding-right: 20px;
+      }
+
+      .aboutfield {
+        margin: 20px;
+        width: 700px;
+        padding: 50px;
+      }
+      
+      .abouttext {
+        padding: 20px;
+        font-size: 20px;
+        color: white;
+        border: 2px dotted darkslateblue;
+      }
 
 }
