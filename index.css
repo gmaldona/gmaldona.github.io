@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Gayathri', sans-serif;
+}
+
+#wrapper {
+    height: 100vh;
+}
+
+.button {
+    background-color: #6067c5; 
+    border-radius: 20px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+.btn:hover {
+    background-image:none;
+    background-color:#13196d;
+}
+
+.arrow{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #06A8FF;
+    border-right: 5px solid #06A8FF;
+    transform: rotate(45deg);
+    animation: animate 2s infinite;
+  }
+  .arrow span:nth-child(2){
+    animation-delay: -0.2s;
+  }
+  .arrow span:nth-child(3){
+    animation-delay: -0.4s;
+  }
+  @keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+  }
+
+@media (min-width: 300px) {
+
+    #section {
+        color: white;
+        font-size: 7vw;
+        text-align: left;
+        margin: 30px;
+    }
+
+    .banner {
+        font-weight: bold;
+        margin: 0 auto;
+        color: white;
+        text-align: center;
+        font-size: 5vw;
+    }
+    .banner-photo {
+        padding-top: 40px;
+        width: 50%;   
+        border-radius: 150px; 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .banner-description {
+        font-size: 5vw;
+        padding: 0px 100px 0px 100px;
+    }
+
+    .project {
+        padding: 30px;
+        width: 350px;
+        height: 300px;
+        background-image: linear-gradient(#133B78, #6187c8);
+        border-radius: 1cm;
+    }
+      
+    .project-title {
+        font-size: 20px;
+        font-weight: bold;
+        color: #CCCCFF;
+        text-align: center;
+      }
+      
+      .project-image {
+        display:none;
+      }
+      
+      .project-des {
+        padding-left: 30px;
+        padding-right: 30px; 
+        font-size: 15px;
+        text-align: center;
+      }
+      
+      .project-tech {
+        display: inline-flex;
+        justify-content: center;
+        padding: 5px;
+      }
+
+      .project-ls {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .tech-group {
+        display: flex;
+        justify-content: center;
+      }
+
+      .project-image-link {
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutfield {
+        margin: 0px;
+        width: 400px;
+        padding: 50px;
+      }
+      
+      .abouttext {
+        padding: 20px;
+        font-size: 20px;
+        color: white;
+        border: 2px dotted darkslateblue;
+      }
+      
+    
+}
+
+@media (min-width: 768px) {
+
+    .banner {
+        font-weight: bold;
+        margin: 0 auto;
+        color: white;
+        text-align: center;
+        font-size: 2vw;
+    }
+    .banner-photo {
+        padding-top: 40px;
+        width: 15%;   
+        border-radius: 150px; 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .banner-description {
+        font-size: 2vw;
+        padding: 0px 200px 0px 200px;
+    } 
+
+    #section {
+        color: white;
+        font-size: 3vw;
+        text-align: left;
+        margin: 50px;
+    }
+
+}
